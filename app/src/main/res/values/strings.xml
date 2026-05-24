@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">短信自动回复</string>
+
+    <!-- 关键词匹配模式（显示名） -->
+    <string-array name="keyword_match_modes">
+        <item>包含</item>
+        <item>完全匹配</item>
+        <item>开头匹配</item>
+        <item>正则表达式</item>
+    </string-array>
+
+    <!-- 关键词匹配模式（实际值） -->
+    <string-array name="keyword_match_mode_values">
+        <item>contains</item>
+        <item>equals</item>
+        <item>starts_with</item>
+        <item>regex</item>
+    </string-array>
+
+    <!-- 号码匹配模式（显示名） -->
+    <string-array name="sender_match_modes">
+        <item>精确匹配</item>
+        <item>开头匹配</item>
+        <item>包含</item>
+        <item>任意号码</item>
+    </string-array>
+
+    <!-- 号码匹配模式（实际值） -->
+    <string-array name="sender_match_mode_values">
+        <item>exact</item>
+        <item>starts_with</item>
+        <item>contains</item>
+        <item>any</item>
+    </string-array>
+
+    <!-- 动作类型（显示名） -->
+    <string-array name="action_types">
+        <item>回复短信</item>
+        <item>短信转发</item>
+        <item>钉钉推送</item>
+        <item>回复+短信转发</item>
+        <item>回复+钉钉推送</item>
+    </string-array>
+
+    <!-- 动作类型（实际值） -->
+    <string-array name="action_type_values">
+        <item>reply</item>
+        <item>forward</item>
+        <item>dingtalk</item>
+        <item>both</item>
+        <item>reply_dingtalk</item>
+    </string-array>
+</resources>

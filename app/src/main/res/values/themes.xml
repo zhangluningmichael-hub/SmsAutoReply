@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmsAutoReply" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF1976D2</item>
+        <item name="colorPrimaryDark">#FF1565C0</item>
+        <item name="colorAccent">#FF26A69A</item>
+        <item name="android:statusBarColor">#FF1565C0</item>
+    </style>
+</resources>

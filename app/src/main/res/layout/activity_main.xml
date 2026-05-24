@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/page_bg">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:contentDescription="应用图标" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信自动回复"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智能管理短信，自动回复与转发"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btn_rules"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📋 规则管理"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_primary_bg"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_logs"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📄 操作日志"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_primary_bg"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⚙️ 设置"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@drawable/btn_primary_bg"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_service_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="服务运行中..."
+        android:textSize="12sp"
+        android:textColor="@color/hint_color" />
+
+</LinearLayout>
