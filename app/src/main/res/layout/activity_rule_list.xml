@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page_bg">
@@ -10,7 +11,10 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/primary"
         android:layout_alignParentTop="true"
-        android:elevation="4dp" />
+        android:elevation="4dp"
+        app:title="规则管理"
+        app:titleTextColor="@color/on_primary"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
 
     <LinearLayout
         android:id="@+id/empty_view"
@@ -23,17 +27,25 @@
         android:layout_below="@id/toolbar">
 
         <TextView
-            android:text="暂无规则"
-            android:textSize="20sp"
-            android:textColor="@color/text_secondary"
+            android:text="📋"
+            android:textSize="64sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="暂无规则"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp" />
 
         <TextView
             android:text="点击右下角 + 按钮添加新规则"
             android:textSize="14sp"
-            android:textColor="@color/hint_color"
+            android:textColor="@color/text_secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -47,18 +59,17 @@
         android:padding="12dp"
         android:clipToPadding="false" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:text="+"
-        android:textSize="28sp"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:background="@drawable/btn_primary_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
-        android:elevation="6dp" />
+        android:contentDescription="添加规则"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/primary"
+        app:tint="@color/on_primary"
+        app:fabSize="normal" />
 
 </RelativeLayout>

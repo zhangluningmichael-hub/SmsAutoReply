@@ -64,7 +64,7 @@ public class SettingsActivity extends AppCompatActivity {
         ruleEngine.setBlacklistNumbers(blacklist);
 
         if (serviceEnabled) {
-            startService(new Intent(this, SmsService.class));
+            startForegroundService(new Intent(this, SmsService.class));
             Toast.makeText(this, "服务已启动", Toast.LENGTH_SHORT).show();
         } else {
             stopService(new Intent(this, SmsService.class));

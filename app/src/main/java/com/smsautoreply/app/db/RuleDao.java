@@ -25,6 +25,9 @@ public interface RuleDao {
     @Query("SELECT * FROM rules WHERE enabled = 1 ORDER BY priority ASC, id DESC")
     List<RuleEntity> getEnabledRulesSync();
 
+    @Query("SELECT * FROM rules ORDER BY priority ASC, id DESC")
+    List<RuleEntity> getAllRulesSync();
+
     @Query("SELECT * FROM rules WHERE id = :id")
     RuleEntity getRuleById(long id);
 

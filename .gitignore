@@ -16,3 +16,8 @@ outputFiles.bin
 stableIds.txt
 .R.
 R.txt
+
+# Claude code files
+.claude/
+.gradle-home/
+gradle-*.zip
